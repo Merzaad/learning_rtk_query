@@ -1,8 +1,5 @@
-import counterReducer, {
-  increment,
-  decrement,
-  incrementByAmount,
-} from './counterSlice';
+/* eslint-disable no-undef */
+import counterReducer, { increment, decrement, incrementByAmount } from './counterSlice';
 
 describe('counter reducer', () => {
   const initialState = {
