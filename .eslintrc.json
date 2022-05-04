@@ -18,5 +18,7 @@
         "react"
     ],
     "rules": {
+        "linebreak-style":"off",
+        "semi":"off"
     }
 }

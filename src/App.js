@@ -1,12 +1,16 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import * as React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { useGetPost } from './features/rtk-query/api';
 
 function App() {
+  const { data, error, isLoading } = useGetPost(1);
   return (
     <div className="App">
+      <h1>{data && data.title}</h1>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
