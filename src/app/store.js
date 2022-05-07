@@ -2,7 +2,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { postApi } from '../features/rtk-query/api'
-import counterReducer from '../features/counter/counterSlice';
+import counterReducer from '../features/rtk/counterSlice';
 
 const rootReducer = combineReducers({
   [postApi.reducerPath]: postApi.reducer,
