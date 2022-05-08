@@ -10,7 +10,7 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from '../features/rtk/counterSlice';
+} from '../../features/rtk/counter/counterSlice';
 import styles from './Counter.module.css';
 
 export function Counter() {
