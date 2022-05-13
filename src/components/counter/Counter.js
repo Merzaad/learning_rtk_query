@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/button-has-type */
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import {
   decrement,
   increment,
@@ -10,15 +10,15 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from '../../features/rtk/counter/counterSlice';
-import styles from './Counter.module.css';
+} from '../../features/rtk/counter/counterSlice'
+import styles from './Counter.module.css'
 
 export function Counter() {
-  const count = useSelector(selectCount);
-  const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const count = useSelector(selectCount)
+  const dispatch = useDispatch()
+  const [incrementAmount, setIncrementAmount] = useState('2')
 
-  const incrementValue = Number(incrementAmount) || 0;
+  const incrementValue = Number(incrementAmount) || 0
 
   return (
     <div>
@@ -63,5 +63,5 @@ export function Counter() {
         </button>
       </div>
     </div>
-  );
+  )
 }
