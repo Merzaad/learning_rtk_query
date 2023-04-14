@@ -9,8 +9,8 @@ function App() {
   const { data, isLoading } = useGetPost(2)
 
   return (
-    <div className='App'>
-      <header className='App-header'>
+    <div className="App">
+      <header className="App-header">
         <p>testttttt</p>
         <Test data={data} />
         <h1>{isLoading ? 'loading' : 'done'}</h1>
